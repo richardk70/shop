@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10em;
+    height: 12em;
+    background: #ffffcc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+} 
+
+#header{
+    flex: 1;
+    height: 10%;
+    position: relative;
+    top: -30px;
+}
+#main{
+    flex: 6;
+    position: relative;
+    top: -30px;
+}
+#footer{
+    flex: 1;
+    width: 90%;
+    display: flex;
+    align-self: center;
+
+    span {
+        flex: 1;
+    }
+    span:first-child{
+        flex: 3;
+    }
+}
+
+ul{
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    li{
+        list-style: none;
+        display: flex;
+        line-height: 1.25em;
+        text-align: left;
+
+        span {
+            flex: 1;
+        }
+        span:first-child{
+            flex: 2;
+        }
+    }
+}
+
+.fa {
+    transform: scale(1.5);
+}
+
+input {
+    height: 36px;
+    font-size: 24px;
+}
+
+input[type="text"]{
+    position: relative;
+    left: -10px;
+    width: 160px;
+}
+
+select{
+    font-size: 24px;
+}
+
+.black{
+    color: black;
+}
+
+.grey{
+    color: rgba(0,0,0,0.1);
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+
+
